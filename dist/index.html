@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <canvas style="height: 300px;width: 300px;" id="canvas"></canvas>
+  </div>
+  <script src="./hrd.js"></script>
+  <script>
+    const canvas = document.getElementById('canvas')
+    const hrdGame = HRD.createHRD({
+      canvas,
+      size: [3, 3],
+      initState: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      src: 'https://pics3.baidu.com/feed/1b4c510fd9f9d72a63b4395f08507c33359bbb25.jpeg?token=8efeff0fc4beef5e0e39218b76b49033',
+      isShowNumber: true,
+    })
+    hrdGame.init()
+  </script>
+</body>
+
+</html>
