@@ -21,6 +21,15 @@
       initState: [1, 2, 3, 4, 5, 6, 7, 8, 9],
       src: 'https://pics3.baidu.com/feed/1b4c510fd9f9d72a63b4395f08507c33359bbb25.jpeg?token=8efeff0fc4beef5e0e39218b76b49033',
       isShowNumber: true,
+      start() {
+        // 游戏开始的回调
+        console.log('开始')
+      },
+      success() {
+        // 游戏成功的回调
+        console.log('成功')
+        alert('成功')
+      }
     })
     hrdGame.init()
   </script>
